@@ -11,7 +11,7 @@ context('Basic', () => {
     cy.contains('[Home Layout]')
       .should('exist')
 
-    cy.get('#input')
+    cy.get('[data-test="input"]')
       .type('Vitesse{Enter}')
       .url()
       .should('eq', 'http://localhost:3333/hi/Vitesse')

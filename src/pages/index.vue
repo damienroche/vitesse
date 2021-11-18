@@ -30,7 +30,7 @@ const { t } = useI18n()
     <div class="py-4" />
 
     <input
-      id="input"
+      data-test="input" 
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
       :aria-label="t('intro.whats-your-name')"
